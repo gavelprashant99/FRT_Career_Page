@@ -27,44 +27,40 @@ input{
     height: 768px;
     position: relative;
 }
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 0 30px;
-    background-color: #4C7C7C;
-    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.514);
-    z-index: 1;
-    width: 100%;
-    position: fixed;
-    left: 0px;
-    top: 0px;
+.career h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
 }
-nav ul{
-    display: flex;
-    margin: 0;
-    padding: 0;
+.career{  
+    height: 100px;
+    text-align: center;
+    background-color: #4C7C7C;
 }
 
-nav ul li a{
-    height: 40px;
-    line-height: 43px;
-    margin: 8px;
-    padding: 0px 10px;
+.ctn{
+    margin: 0;
+    position: absolute;
     display: flex;
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    font-weight: 400;
-    color: #ffffff;
-    letter-spacing: 1px;
-    transition: 0.3s ease-in-out;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
 }
-nav ul li a:hover{
-    border-radius: 2px;
-    background-color: #5cfdb2;
-    color: #10003d;
-    box-shadow: 2px 2px 20px rgba(1, 141, 83, 0.514);
-}
+.button {
+    border: none;
+    color: white;
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+    width: 500%;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  .button2 {background-color: #9e5430;} /* Blue */  
 .active{
     background-color: #5cfdb2;
     color: #10003d;
@@ -83,6 +79,10 @@ nav .menu-btn{
     top: 50%;
     transform: translate(-50%,-50%);
     width: 90%;
+}
+
+.topnav{
+    background-color: #007023;
 }
 .header-img{
     width: 500px;
@@ -168,7 +168,7 @@ nav .menu-btn{
     margin: 20px 30px;
 }
 .box{
-    display: flex;
+    display:inline;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
@@ -177,15 +177,11 @@ nav .menu-btn{
     text-align: center;
     background-color: #4C7C7C;
     box-shadow: 2px 2px 20px rgba(1, 141, 83, 0.507);
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     margin: 20px;
     position: relative;
     flex-grow: 1;
-}
-.box img{
-    height: 90px;
-    margin: 10px;
 }
 .box font{
     font-size: 1.5rem;
@@ -193,6 +189,16 @@ nav .menu-btn{
     letter-spacing: 1px;
     font-weight: 700;
 }
+.box img{
+    max-width: 70%;
+    height: auto;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
 .box p{
     font-size: 0.9rem;
     color: rgb(255, 255, 255);
